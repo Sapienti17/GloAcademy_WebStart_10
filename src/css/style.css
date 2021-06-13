@@ -167,7 +167,7 @@ section {
   display: block;
   margin: 0 auto;
 }
-.prev {
+.arrow {
   position: absolute;
   background: url(../img/left_arrow.png) center no-repeat;
   background-size: 60%;
