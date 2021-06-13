@@ -220,19 +220,25 @@ section {
 }
 
 .arrow {
+  top: 50%;
+  transform: translateY(-50%);
   position: absolute;
-  background: url(../img/left_arrow.png) center no-repeat;
-  background-size: 60%;
-  border: none;
+  z-index: 99;
   width: 2rem;
   height: 2rem;
-  top: 50%;
+  border: none;
+}
+.prev {
   left: 0;
-  // transform: scaleY(-50%);
+  background-size: 60%;
+  background: url(../img/left_arrow.png) center no-repeat;
 }
-.prev{
-  
+.next {
+  right: 0;
+  background-size: 60%;
+  background: url(../img/right_arrow.png) center no-repeat;
 }
+
 @media (max-width: 1199px) {
   .phone-block {
     text-align: right;
