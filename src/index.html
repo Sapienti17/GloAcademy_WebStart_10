@@ -44,7 +44,7 @@
             <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12">
               <div class="wrap">
                 <div class="wrap-block">
-                  <button class="button header-btn">
+                  <button class="button header-btn popup-btn">
                     получить консультацию
                   </button>
                 </div>
@@ -177,15 +177,15 @@
           <h4 class="popup-header">Заинтересовало?</h4>
           <!-- Подзаголовок окна -->
           <p>Оставьте контактные данные <br />для связи</p>
-          <button class="popup-close"></button>
-          <div class="main-form">
+          <button class="popup-close">&times;</button>
+          <div class="main-form popup-form">
             <form action="#">
               <label for="#">Ваше имя</label>
               <input class="main-form-input" type="text" />
               <label for="#">Номер телефона</label>
               <input class="main-form-input" type="text" />
               <label for="#">Сообщение</label>
-              <textarea class="main-form-input" rows="5"></textarea>
+              <textarea class="main-form-input" cols="30" rows="5"></textarea>
               <button class="main-form-btn button" type="submit">
                 оставьте заявку
               </button>
@@ -206,6 +206,15 @@
     <!-- Инициализируем сам слайдер -->
     <script>
       $(document).ready(function () {
+        $(".popup-btn").on("click", function (event) {
+          event.preventDefault();
+          $(".popup").fadeIn();
+        });
+        $(".popup-close").on("click", function (event) {
+          event.preventDefault();
+          $(".popup").fadeOut();
+        });
+
         $(".features-slider").slick({
           infinite: true,
           slidesToShow: 4,
