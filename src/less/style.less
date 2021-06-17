@@ -78,9 +78,17 @@ section {
   padding: 10rem 0;
 }
 .section-header {
+  &_light {
+    color: @light;
+  }
+  h2 {
+    .bold();
+    font-size: 3.6rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
   margin: 2rem 0 10rem;
-  .bold();
-  font-size: 3.6rem;
   text-align: center;
 }
 
@@ -238,6 +246,14 @@ section {
   right: 0;
   background-size: 60%;
   background: url(../img/right_arrow.png) center no-repeat;
+}
+
+// Секция с ценами
+.prices {
+  background: @icons-color url(../img/prices/prices-bg.jpg) center;
+  &-header-btn {
+    margin-top: 2.5rem;
+  }
 }
 
 // Оформление модальных окон

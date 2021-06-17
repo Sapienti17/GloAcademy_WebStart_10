@@ -46,9 +46,17 @@ section {
 }
 .section-header {
   margin: 2rem 0 10rem;
+  text-align: center;
+}
+.section-header_light {
+  color: #ffffff;
+}
+.section-header h2 {
   font-family: "ProximaNova_bold", sans-serif;
   font-size: 3.6rem;
-  text-align: center;
+}
+.section-header p {
+  font-size: 1.4rem;
 }
 .main {
   padding: 3rem 0 5rem;
@@ -187,6 +195,12 @@ section {
   right: 0;
   background-size: 60%;
   background: url(../img/right_arrow.png) center no-repeat;
+}
+.prices {
+  background: #45b814 url(../img/prices/prices-bg.jpg) center;
+}
+.prices-header-btn {
+  margin-top: 2.5rem;
 }
 .popup {
   display: none;
